@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+<< info 
+check username is available or not 
+info
+
+read -p "Enter username: " username
+count=$(cat /etc/passwd | grep $username | wc | awk '{print $1}')
+
+#echo "$count"
+
+if [$count == 0 ]
+then 
+
+	echo "User doesn't exist" 
+else 
+	echo "user exist "
+fi 
+
+

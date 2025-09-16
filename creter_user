@@ -1,0 +1,18 @@
+#!/bin/bash 
+
+
+#create User without args
+
+echo "-------------------------creating Üser ----------------------------"
+
+read -p "Enter username: " username
+read -p "Enter password: " passwd 
+
+sudo useradd -M $username
+echo -e "$passwd\n$passwd" | sudo passwd $username 
+
+echo "--------------------------Üser added successfully -----------------------------"
+
+
+sudo cat /etc/passwd | grep $username
+

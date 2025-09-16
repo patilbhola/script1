@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+
+
+echo "Ïnstalling pkg: " $1
+
+sudo apt-get update 
+
+#sudo apt-get update > /dev/null   --- o/p will not show on console 
+sudo apt-get install $1 -y 
+
+echo " Installing pkg successfully : "
