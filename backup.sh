@@ -9,6 +9,7 @@ eg :
 src = /home/ubuntu/ShellScripting/
 dest= /home/ubuntu/backup/
 This is for backup example
+--------------------------
 info
 
 src="/home/ubuntu/ShellScripting/scripts"
